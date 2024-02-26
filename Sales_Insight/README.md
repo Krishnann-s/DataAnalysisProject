@@ -27,7 +27,6 @@ https://www.youtube.com/watch?v=uj4OYk5nKCg
 3. In __Data Import__ select __Import from Self-Contanied File__ and navigate to the `MySQL_dump.sql` Path and Select __Start Import__
 4. To see the imported database click on refresh.
 
-#### Data Analysis Using SQL
 
 __These are some set of Queries used to understand the data.__
 
@@ -84,17 +83,18 @@ __These are some set of Queries used to understand the data.__
     ```
     SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and transactions.market_code="Mark001";
     ```
-3. Power BI Analysis:
+
 
 #### Data Analysis Using Power BI
 
-1. Formula to create norm_amount column
+__Formula to create norm_amount column__
 ```
 = Table.AddColumn(#"Filtered Rows", "norm_amount", each if [currency] = "USD" or [currency] ="USD#(cr)" then [sales_amount]*75 else [sales_amount], type any)
 ```
 2. Above code created 2 USD and 2 INR values, one with USD\r, which can be filtered.
 3. After Filtering Select __Close&Apply__ from __Home__ tab
 
+![DataAnalysisProject\Sales_Insight\Finaloutput.png]
 
 ## Contributors
 [Krishnan](https://github.com/Krishnann-s)

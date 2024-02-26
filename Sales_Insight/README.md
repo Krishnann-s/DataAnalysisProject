@@ -94,7 +94,7 @@ __Formula to create norm_amount column__
 2. Above code created 2 USD and 2 INR values, one with USD\r, which can be filtered.
 3. After Filtering Select __Close&Apply__ from __Home__ tab
 
-![DataAnalysisProject\Sales_Insight\Finaloutput.png]
+![Final output](Finaloutput.png)
 
 ## Contributors
 [Krishnan](https://github.com/Krishnann-s)

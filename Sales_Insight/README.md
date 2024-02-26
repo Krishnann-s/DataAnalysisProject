@@ -13,7 +13,7 @@ To replicate the analysis performed in this project, follow these steps:
 
 1. Clone the Repository:
 ```
-git clone <repository-url>
+git clone https://github.com/Krishnann-s/DataAnalysisProject.git
 ```
 
 2. Data Preparation and Data Understanding:

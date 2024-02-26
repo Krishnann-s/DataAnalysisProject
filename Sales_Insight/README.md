@@ -91,7 +91,7 @@ __Formula to create norm_amount column__
 ```
 = Table.AddColumn(#"Filtered Rows", "norm_amount", each if [currency] = "USD" or [currency] ="USD#(cr)" then [sales_amount]*75 else [sales_amount], type any)
 ```
-2. Above code created 2 USD and 2 INR values, one with USD\r, which can be filtered.
+2. Above code created 2 USD and 2 INR values, one with USD\r and INR\r, which can be filtered.
 3. After Filtering Select __Close&Apply__ from __Home__ tab
 
 ![Final output](Finaloutput.png)
